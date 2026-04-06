@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina de ejemplo HTML</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--h1 ==> para hacer un titulo, el mas importante
-               existe hasta el h6    
-    -->
-    <h1>pagina de ejemplo</h1>
+    <!--header>nav>ul>li*4>a -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#s1">Inicio</a></li>
+                <li><a href="#ld">Lista desordenada</a></li>
+                <li><a href="#lo">Lista ordenada</a></li>
+                <li><a href="#la">Lista automatica</a></li>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="s1">
+
+        <h1 >pagina de ejemplo</h1>
     <!-- p ==> etiqueta para definir un parrafo -->
     <!-- lorem ==> genera texto demo rapidamente -->
     <p>
@@ -27,8 +42,10 @@
          Explicabo consequatur enim beatae recusandae quidem laborum, aliquam quaerat assumenda cum dignissimos? Animi voluptates omnis veritatis dolorem maiores officia vero a. Nostrum sint, omnis eum et sit animi consequatur voluptate.
          Ducimus, quo commodi accusamus iste culpa, omnis tempora eligendi eos quam nostrum nihil odit delectus quia dicta aliquam eum fugiat rem exercitationem maxime minus. Consequuntur iste dolor labore quaerat ipsum.
          Sunt voluptatum porro sint praesentium maiores! Qui voluptatum porro voluptatibus neque sed est quibusdam. Veritatis sunt eius illum provident, porro cum molestias, ea officiis dignissimos impedit reprehenderit omnis inventore reiciendis.
-    </p>
-    <h2>Lista desordenada</h2>
+    </p> 
+    </section>
+    <section>
+    <h2 id="ld">Lista desordenada</h2>
     <!-- ul>li*4 > se4 utiliza para crear una etiqueta dentro de otra -->
     <ul>
         <li>Item 1</li>
@@ -38,7 +55,7 @@
     </ul>
     <!-- h2+ol>li*5 ==> + sirve para crear etiquetas al mismo nivel,
       una debajo de la otra -->
-    <h2>Lista ordenada</h2>
+    <h2 id="lo">Lista ordenada</h2>
     <ol>
         <li>Item uno</li>
         <li>Item dos</li>
@@ -50,7 +67,7 @@
     {} ==> se utilizam para agregar texto
     $ ==> agrega un numero desde 1 correlativo
     -->   
-    <h2>Lista automatica</h2>
+    <h2 id="la">Lista automatica</h2>
     <ul>
         <li>Elemento 1/10</li>
         <li>Elemneto 2/10</li>
